@@ -6,12 +6,26 @@
     "chrome_url_overrides" : {
       "newtab": "loading_page.html"
     },
+
+    // Popup-related stuff:
+    "icons": {
+    	"128": "icons/logo-128.png",
+    	"48": "icons/logo-48.png",
+    	"16": "icons/logo-16.png"
+    },
+    "browser_action": {
+    	"default_popup": "src/popup.html"
+    },
+
     "content_scripts": [
       {
+        "matches": [
+          "*://*/*"
+        ],
         "js": [
           "/src/content.js",
           "https://www.gstatic.com/firebasejs/5.8.3/firebase.js"
-        ],
+        ]
       }
     ]
 
