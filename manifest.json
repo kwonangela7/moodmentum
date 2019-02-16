@@ -3,11 +3,26 @@
     "description" : "Mood Awareness Tool",
     "version": "1.0",
     "manifest_version": 2,
+
+    // Popup-related stuff:
+    "icons": {
+    	"128": "icons/logo-128.png",
+    	"48": "icons/logo-48.png",
+    	"16": "icons/logo-16.png"
+    },
+
+    "browser_action": {
+    	"default_popup": "src/popup.html"
+    },
+
     "content_scripts": [
       {
+        "matches": [
+          "*://*/*"
+        ],
         "js": [
           "/src/content.js"
-        ],
+        ]
       }
     ]
 
