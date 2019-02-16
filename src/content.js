@@ -7,3 +7,5 @@
  * everytime a webpage loads over HTTP or HTTPS.
  */
 
+ alert("I am an alert box!");
+
