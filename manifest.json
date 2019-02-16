@@ -3,6 +3,9 @@
     "description" : "Mood Awareness Tool",
     "version": "1.0",
     "manifest_version": 2,
+    "chrome_url_overrides" : {
+      "newtab": "loading_page.html"
+    },
 
     // Popup-related stuff:
     "icons": {
@@ -10,7 +13,6 @@
     	"48": "icons/logo-48.png",
     	"16": "icons/logo-16.png"
     },
-
     "browser_action": {
     	"default_popup": "src/popup.html"
     },
@@ -21,7 +23,8 @@
           "*://*/*"
         ],
         "js": [
-          "/src/content.js"
+          "/src/content.js",
+          "https://www.gstatic.com/firebasejs/5.8.3/firebase.js"
         ]
       }
     ]
