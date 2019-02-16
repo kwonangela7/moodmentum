@@ -14,17 +14,6 @@ input {
     width: 150px;
     height: 20px;
 }
-
-button {
-    height: 30px;
-    width: 70px;
-    background: none; /* This removes the default background */
-    color: #313131;
-    border: 1px solid #313131;
-    border-radius: 50px; /* This gives our button rounded edges */
-    font-size: 12px;
-    cursor: pointer;
-}
 form {
     padding-top: 20px;
 }
@@ -35,7 +24,7 @@ form {
     align-content: center;
 }
 .greeting {
-    font-family: sans-serif;
+    font-family: Calibri;
     font-size: 60px;
     color: #fff;
 }
@@ -45,4 +34,65 @@ body {
 }
 html {
     height: 100%;
+}
+button {
+    display: inline-block;
+    /*height: 134px;*/
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    width: 104px;
+    border: none;
+    background: none;
+    position: relative;
+}
+.mood-buttons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#mood-1 {
+    background-image: url('https://cdn.shopify.com/s/files/1/1061/1924/files/Smiling_with_Sweat_Emoji.png?9898922749706957214');
+    background-size: 100px 100px;
+    height: 100px;
+    width: 100px;
+    border: none;
+}
+#mood-2 {
+    background-image: url('https://cdn.shopify.com/s/files/1/1061/1924/products/Smiling_Face_with_Tightly_Closed_eyes_large.png?v=1480481056');
+    background-size: 100px 100px;
+    height: 100px;
+    width: 100px;
+    border: none;
+}
+#mood-3 {
+    background-image: url('https://cdn.shopify.com/s/files/1/1061/1924/products/Grinmacing_Face_Emoji_large.png?v=1480481035');
+    background-size: 100px 100px;
+    height: 100px;
+    width: 100px;
+    border: none;
+}
+#mood-4 {
+    background-image: url('https://cdn.shopify.com/s/files/1/1061/1924/products/Cold_Sweat_Emoji_large.png?v=1480481051');
+    background-size: 100px 100px;
+    height: 100px;
+    width: 100px;
+    border: none;
+}
+#mood-5 {
+    background-image: url('https://cdn.shopify.com/s/files/1/1061/1924/products/Money_Face_Emoji_b26670f3-2d57-42f5-9003-f1a1ee3257c6_large.png?v=1480481059');
+    background-size: 100px 100px;
+    height: 100px;
+    width: 100px;
+    border: none;
+}
+#settings-button {
+    height: 30px;
+    width: 70px;
+    font-size: 12px;
+    cursor: pointer;
+    background: none; /* This removes the default background */
+    color: #313131;
+    border: 1px solid #313131;
+    border-radius: 50px; /* This gives our button rounded edges */
 }
