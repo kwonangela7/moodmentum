@@ -15,7 +15,12 @@
   "permissions": [
     "identity"
   ],
-  "content_security_policy":"script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
+  "background": [
+    {
+    "scripts": ["background.js"]
+    }
+  ],
+  "content_security_policy":"script-src 'self' https://www.gstatic.com/ https://*.Firebase.com https://www.googleapis.com; object-src 'self'",
   "oauth2": {
     "client_id": "imogknkpofejibdmakejpahciilhbjkp",
     "scopes": [

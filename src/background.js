@@ -36,15 +36,14 @@ function initApp() {
 	};
 	firebase.initializeApp(config);
 
-	var db = firebase.database(); // creates a reference to firebase db
-
-	var username = "angela"
-	return db.ref('/users/users' + username).once('value').then(function(snapshot) {
-		var username = (snapshot.val() && snapshot.val().username) || 'Anonymous';
-		var usermood = (snapshot.val() && snapshot.val().username.mood) || 'Fine';
-	});
-
-	window.alert(username + usermood);
+	chrome.runtime.onMessage.addListener(
+  	function(request, sender, sendResponse) {
+    console.log(sender.tab ?
+        "from a content script:" + sender.tab.url :
+        "from the extension");
+    if (request.greeting == "hello")
+      sendResponse({farewell: "goodbye"});
+  	});
 }
 
 window.onload = function() {
