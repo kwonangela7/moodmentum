@@ -1,0 +1,114 @@
+.settings {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    transform: translateX(-100%);
+    transition: transform 1s;
+}
+input {
+    padding: 5px;
+    font-size: 12px;
+    width: 150px;
+    height: 20px;
+}
+button {
+    height: 30px;
+    width: 70px;
+    background: none; /* This removes the default background */
+    color: #313131;
+    border: 1px solid #313131;
+    border-radius: 50px; /* This gives our button rounded edges */
+    font-size: 12px;
+    cursor: pointer;
+}
+form {
+    padding-top: 20px;
+}
+.settings-open.settings {
+    transform: none;
+}
+
+.greeting-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.greeting {
+    font-family: Calibri;
+    font-size: 60px;
+    color: #fff;
+}
+body {
+    background-color: #c670ca;
+    background-image: linear-gradient(45deg, #c670ca 0%, #25a5c8 52%, #20e275 90%);
+}
+html {
+    height: 100%;
+}
+button {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    width: 104px;
+    border: none;
+    background: none;
+    position: relative;
+}
+.mood-buttons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#mood-1 {
+    background-image: url('https://cdn.shopify.com/s/files/1/1061/1924/products/Very_sad_emoji_icon_png_large.png?v=1480481019');
+    background-size: 100px 100px;
+    height: 100px;
+    width: 100px;
+    border: none;
+}
+#mood-2 {
+    background-image: url('https://cdn.shopify.com/s/files/1/1061/1924/products/Angry_Emoji_large.png?v=1480481051');
+    background-size: 100px 100px;
+    height: 100px;
+    width: 100px;
+    border: none;
+}
+#mood-3 {
+    background-image: url('https://cdn.shopify.com/s/files/1/1061/1924/products/Smiling_Face_with_Tightly_Closed_eyes_large.png?v=1480481056');
+    background-size: 100px 100px;
+    height: 100px;
+    width: 100px;
+    border: none;
+}
+#mood-4 {
+    background-image: url('https://cdn.shopify.com/s/files/1/1061/1924/products/Tired_Face_Emoji_a5bdf862-1509-419f-9e2a-c9208ae1938b_large.png?v=1480481057');
+    background-size: 100px 100px;
+    height: 100px;
+    width: 100px;
+    border: none;
+}
+#mood-5 {
+    background-image: url('https://cdn.shopify.com/s/files/1/1061/1924/products/Face_With_Thermometer_Emoji_3fd8698c-4243-42cb-ade3-996773b4529c_large.png?v=1480481058');
+    background-size: 100px 100px;
+    height: 100px;
+    width: 100px;
+    border: none;
+}
+#mood-6 {
+    background-image: url('https://cdn.shopify.com/s/files/1/1061/1924/products/Sleeping_Emoji_large.png?v=1480481055');
+    background-size: 100px 100px;
+    height: 100px;
+    width: 100px;
+    border: none;
+}
+#settings-button {
+    height: 30px;
+    width: 70px;
+    font-size: 12px;
+    cursor: pointer;
+    background: none; /* This removes the default background */
+    color: #313131;
+    border: 1px solid #313131;
+    border-radius: 50px; /* This gives our button rounded edges */
+}
