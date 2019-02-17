@@ -61,35 +61,42 @@ button {
     align-content: center;
 }
 #mood-1 {
-    background-image: url('https://cdn.shopify.com/s/files/1/1061/1924/files/Smiling_with_Sweat_Emoji.png?9898922749706957214');
+    background-image: url('https://cdn.shopify.com/s/files/1/1061/1924/products/Very_sad_emoji_icon_png_large.png?v=1480481019');
     background-size: 100px 100px;
     height: 100px;
     width: 100px;
     border: none;
 }
 #mood-2 {
-    background-image: url('https://cdn.shopify.com/s/files/1/1061/1924/products/Smiling_Face_with_Tightly_Closed_eyes_large.png?v=1480481056');
+    background-image: url('https://cdn.shopify.com/s/files/1/1061/1924/products/Angry_Emoji_large.png?v=1480481051');
     background-size: 100px 100px;
     height: 100px;
     width: 100px;
     border: none;
 }
 #mood-3 {
-    background-image: url('https://cdn.shopify.com/s/files/1/1061/1924/products/Grinmacing_Face_Emoji_large.png?v=1480481035');
+    background-image: url('https://cdn.shopify.com/s/files/1/1061/1924/products/Smiling_Face_with_Tightly_Closed_eyes_large.png?v=1480481056');
     background-size: 100px 100px;
     height: 100px;
     width: 100px;
     border: none;
 }
 #mood-4 {
-    background-image: url('https://cdn.shopify.com/s/files/1/1061/1924/products/Cold_Sweat_Emoji_large.png?v=1480481051');
+    background-image: url('https://cdn.shopify.com/s/files/1/1061/1924/products/Tired_Face_Emoji_a5bdf862-1509-419f-9e2a-c9208ae1938b_large.png?v=1480481057');
     background-size: 100px 100px;
     height: 100px;
     width: 100px;
     border: none;
 }
 #mood-5 {
-    background-image: url('https://cdn.shopify.com/s/files/1/1061/1924/products/Money_Face_Emoji_b26670f3-2d57-42f5-9003-f1a1ee3257c6_large.png?v=1480481059');
+    background-image: url('https://cdn.shopify.com/s/files/1/1061/1924/products/Face_With_Thermometer_Emoji_3fd8698c-4243-42cb-ade3-996773b4529c_large.png?v=1480481058');
+    background-size: 100px 100px;
+    height: 100px;
+    width: 100px;
+    border: none;
+}
+#mood-6 {
+    background-image: url('https://cdn.shopify.com/s/files/1/1061/1924/products/Sleeping_Emoji_large.png?v=1480481055');
     background-size: 100px 100px;
     height: 100px;
     width: 100px;

@@ -28,7 +28,7 @@ document.getElementById("name-form").addEventListener('submit', function(e) {
 });
 
 function getGreeting() {
-    document.getElementById("greeting").innerHTML  = `Hello ${userName}!` + `<br />` + `How are you feeling today?`;
+    document.getElementById("greeting").innerHTML  = `Hello ${userName}!` + `<br />` + `How are you feeling?`;
 }
 getGreeting()
 
