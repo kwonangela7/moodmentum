@@ -1,32 +1,39 @@
-  {
-    "name": "Moodmentum",
-    "description" : "Mood Awareness Tool",
-    "version": "1.0",
-    "manifest_version": 2,
-    "chrome_url_overrides" : {
-      "newtab": "loading_page.html"
-    },
-
-    // Popup-related stuff:
-    "icons": {
-    	"128": "icons/logo-128.png",
-    	"48": "icons/logo-48.png",
-    	"16": "icons/logo-16.png"
-    },
-    "browser_action": {
-    	"default_popup": "src/popup.html"
-    },
-
-    "content_scripts": [
+{
+  "manifest_version": 2,
+  "name": "Moodmentum",
+  "description": "This sample shows how to authorize Firebase in a Chrome extension using a Google account.",
+  "version": "2.1",
+  "icons": {
+    "128": "icons/logo-16.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/logo-16.png"
+  },
+  "permissions": [
+    "identity"
+  ],
+  "content_security_policy":"script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
+  "oauth2": {
+    "client_id": "imogknkpofejibdmakejpahciilhbjkp",
+    "scopes": [
+      "https://www.googleapis.com/auth/userinfo.email",
+      "https://www.googleapis.com/auth/userinfo.profile"
+    ]
+  },
+  "content_scripts": [
       {
         "matches": [
           "*://*/*"
         ],
         "js": [
-          "/src/content.js",
-          "https://www.gstatic.com/firebasejs/5.8.3/firebase.js"
+          "/src/content.js"       
         ]
       }
-    ]
+    ],
 
-  }
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmLakXgW91DzweP6WpHrn9yoY7+ZKd0mVmkCOzsHdTH6Reliat4Q2bqLjoX4kziwly0i8jG0859HE56/bYaSvtv6PrkE5u1rNqqEHfEuJm8j0KyiZefneEhiTR+YCbHF4Ld1MKOWWdIKAFDVlepwCeO0cX8nkXXL9XoviOIvuAVqYiY46oisFAJDfhrsqfmLZyRDfGey41wB/RwvV6P7gG/keIvhTe0FUgraVt7/CU8k+WbEsQZIBXENE8OI1jo5RZufJ55iiGlFZ2syANGVXMIpJ5+mfRISo0SefSa2TtKvt4whWwcKBm1zJCvTLDhVd8+104bxpQnaOguHdb/Y94QIDAQAB"
+}
+
+
+
+
