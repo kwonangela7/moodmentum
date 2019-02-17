@@ -1,13 +1,14 @@
 function openSettings() {
-    document.getElementById("settings-button").classList.toggle("settings-open");
+    document.getElementById("settings").classList.toggle("settings-open");
 }
 
-document.getElementById("settings-button").addEventListener('click', openSettings);
+document.getElementById("settings-button").addEventListener('click', openSettings)
 
 var userName;
 
 function saveName() {
     localStorage.setItem('receivedName', userName);
+    getGreeting();
 }
 
 var userName = localStorage.getItem('receivedName');
@@ -22,13 +23,12 @@ function changeName() {
 }
 
 document.getElementById("name-form").addEventListener('submit', function(e) {
-    e.preventDefault()
     changeName();
+    openSettings();
 });
 
 function getGreeting() {
-    document.getElementById("greeting").innerHTML  = `Hello,` + `<br />` + `How are you feeling today?`;
+    document.getElementById("greeting").innerHTML  = `Hello ${userName}!` + `<br />` + `How are you feeling today?`;
 }
-
 getGreeting()
 
