@@ -26,7 +26,12 @@ return db.ref('/users/users' + username).once('value').then(function(snapshot) {
   var usermood = (snapshot.val() && snapshot.val().username.mood) || 'Fine';
 });
 
-window.alert(username + usermood);
+document.getElementByID("text").value = new String()
+// chrome.runtime.sendMessage({greeting: "hello"}, function(response) {
+//   console.logusername + usermood);
+// });
+
+
 
 
 
